@@ -1,0 +1,25 @@
+#!/bin/bash
+
+shopt -s expand_aliases
+source ~/aliases
+#Pulls aliases from the "aliases" file
+
+echo "Hello $USER, Would you like know the current date, month, time or year?"
+read dmty
+
+if [ $dmty == "date" ]; then
+	echo "Today's date is $(today)"
+fi
+
+if [ $dmty == "month" ]; then
+	echo  "The current month is $(month)"
+fi
+
+if [ $dmty == "time" ]; then
+	echo "The time right now is $(current_time)"
+fi
+if [ $dmty == "year" ]; then
+	echo "The year is $(year)"
+fi
+
+echo "Goodbye!"

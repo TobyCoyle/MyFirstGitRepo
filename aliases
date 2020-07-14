@@ -1,0 +1,7 @@
+alias month='date +%B'
+
+alias today='date +%A," "%d'
+
+alias current_time='date +%H:%M'
+
+alias year='date +%Y'
